@@ -1,4 +1,4 @@
-  /* Reseteo básico para quitar márgenes por defecto */
+
         * {
             margin: 0;
             padding: 0;
@@ -19,9 +19,8 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
-            background-color: #ffffff;
-            /* Una liniecita gris clara abajo como se ve en la imagen */
-            border-bottom: 1px solid #eaeaea; 
+            background: linear-gradient(135deg, #0a1f5c 0%, #1a3a80 100%);
+            border-bottom: 1px solid #0a1f5c;
         }
 
         .logo {
@@ -29,7 +28,7 @@
             float: left;
         }
         .header-text {
-            color: #0c1b98; /* Un azul oscurito parecido al del logo */
+            color: #3a13c4; /* texto claro sobre el fondo azul oscuro */
             text-align: right;
             font-weight: bold;
             font-size: 15px;
@@ -38,23 +37,82 @@
 
         /* --- ESTILOS DEL CUERPO (MAIN) --- */
         main {
-            flex-grow: 1; /* Esto hace que el centro agarre todo el espacio sobrante */
+            flex-grow: 1; 
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #fcfcfc; /* Un gris super clarito para el fondo */
+            background-color: #fcfcfc; 
         }
 
         h1 {
-            font-size: 4.5rem; /* Letra bien grandota */
+            font-size: 3rem;
             color: #333333;
-            font-weight: 900; /* Letra bien negrita (bold) */
+            font-weight: 900;
             text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* estética para el formulario webcomponent */
+        feedback-form {
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            /* fondo suave azul luna con sombra ligera */
+            background: linear-gradient(135deg, #cfe0ff 0%, #dae7ff 100%);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 1px solid #1a3a80;
+        }
+
+        /* colores y espaciado del cuerpo */
+        main {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f0f4ff 0%, #e6f7ff 100%);
+            padding: 40px 20px;
+        }
+
+        /* inputs y select con bordes redondeados y foco colorido */
+        input, select, textarea, button {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #1c2bc0;
+            box-shadow: 0 0 2px rgba(28,43,192,0.3);
+        }
+
+        button {
+            background-color: #1c2bc0;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #162099;
+        }
+
+        /* ajuste de pie y header con degradado */
+        header {
+            background: linear-gradient(to right, #ffffff, #eaeaea);
+        }
+        footer {
+            background: linear-gradient(to right, #1c2bc0, #162099);
         }
 
         /* --- ESTILOS DEL PIE DE PÁGINA (FOOTER) --- */
         footer {
-            background-color: #1c2bc0; /* Azul chivo del footer */
+            background-color: #1c2bc0; 
             color: #ffffff;
             text-align: center;
             padding: 25px 20px 30px 20px;
@@ -69,6 +127,6 @@
         .integrantes {
             display: flex;
             justify-content: center;
-            gap: 40px; /* Separación entre los dos nombres */
+            gap: 40px; 
             font-size: 14px;
         }
