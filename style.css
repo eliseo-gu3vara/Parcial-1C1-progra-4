@@ -6,7 +6,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        /* Hacemos que el body ocupe toda la pantalla para empujar el footer abajo */
+      
         body {
             display: flex;
             flex-direction: column;
@@ -29,8 +29,7 @@
             float: left;
         }
         .header-text {
-            color: #3a13c4; /* texto claro sobre el fondo azul oscuro */
-            text-align: right;
+            color: #3a13c4; 
             font-weight: bold;
             font-size: 15px;
             line-height: 1.3;
@@ -42,7 +41,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            /* dejar transparente para que se vea el fondo del body */
             background: transparent;
         }
 
@@ -60,7 +58,6 @@
             display: block;
             width: 100%;
             max-width: 500px;
-            /* fondo suave azul luna con sombra ligera */
             background: linear-gradient(135deg, #cfe0ff 0%, #dae7ff 100%);
             padding: 20px;
             border-radius: 8px;
@@ -74,7 +71,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            /* eliminamos degradado para mostrar imagen de fondo */
             background: transparent;
             padding: 40px 20px;
         }
