@@ -11,6 +11,8 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            background: url('fondo.png') no-repeat center center fixed;
+            background-size: cover;
         }
 
         /* --- ESTILOS DEL ENCABEZADO (HEADER) --- */
@@ -19,7 +21,6 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 50px;
-            background: linear-gradient(135deg, #0a1f5c 0%, #1a3a80 100%);
             border-bottom: 1px solid #0a1f5c;
         }
 
@@ -41,7 +42,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #fcfcfc; 
+            /* dejar transparente para que se vea el fondo del body */
+            background: transparent;
         }
 
         h1 {
@@ -72,7 +74,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(135deg, #f0f4ff 0%, #e6f7ff 100%);
+            /* eliminamos degradado para mostrar imagen de fondo */
+            background: transparent;
             padding: 40px 20px;
         }
 
